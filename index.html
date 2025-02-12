@@ -23,85 +23,102 @@
   </head>
   <body class="font-IBM">
     <!-- header -->
-    <header class="w-full flex justify-between p-5">
+    <header class="w-full flex justify-between items-center p-5">
       <img src="./assets/img/logo canal2.svg" alt="" class="size-20" />
       <img
         src="/assets/img/menu_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg"
         alt=""
-        class="w-10"
+        class="w-10 lg:hidden"
       />
+      <nav class="gap-15 hidden lg:flex">
+        <a href="">Acceuil</a>
+        <a href="">Actualiés</a>
+        <a href="">Programme</a>
+        <a href="">Direct</a>
+      </nav>
+      <button
+        class="hidden lg:inline bg-primarygreen h-10 w-15/100 rounded-2xl text-white"
+      >
+        Premuim
+      </button>
     </header>
     <!-- hero ection -->
     <section class="p-5">
-      <div>
-        <img
-          src="./assets/img/nga.svg"
-          alt=""
-          class="relative object-contain brightness-50 w-full"
-        />
-        <div
-          class="absolute ml-2 border-l-10 border- px-3 border-primarygreen transform -translate-y-20"
-        >
-          <h1 class="text-sm text-white">
-            Il tape les gens pour vivre , françis <br />Nganou
+      <div class="lg:flex gap-15">
+        <div class="flex-1 flex-1">
+          <img
+            src="./assets/img/nga.svg"
+            alt=""
+            class="relative object-contain brightness-50 lg:rounded-[4.3rem] lg:h-full w-full rounded-2xl"
+          />
+          <div
+            class="absolute ml-2 border-l-10 border- px-3 border-primarygreen transform -translate-y-20 lg:-translate-y-40"
+          >
+            <h1 class="text-sm lg:text-2xl font-bold text-white">
+              Il tape les gens pour vivre , françis <br />Nganou
+            </h1>
+            <p class="text-xs text-white">Actu du 23 décembre 2023</p>
+          </div>
+        </div>
+        <div class="pt-10 lg:flex-1 lg:pt-0">
+          <h1 class="font-bold border-l-10 border-primarygreen pl-3">
+            À LA UNE DU JOUR
           </h1>
-          <p class="text-xs text-white">Actu du 23 décembre 2023</p>
+          <div
+            class="grid grid-cols-1 pt-10 lg:pt-3 gap-5 lg:flex flex-col divide-y-1 divide-solid lg:divide-none divide-black"
+          >
+            <div class="flex gap-5 pb-2 lg:pb-0 lg:w-full lg:h-35 lg:gap-2">
+              <img
+                src="./assets/img/les anfant.svg"
+                alt=""
+                class="w-full lg:h-full flex-1 lg:flex-1"
+              />
+              <div class="flex-2">
+                <h1 class="text-xs font-bold">
+                  L’école primaire de melon dans le choc
+                </h1>
+                <p class="text-xs lg:text-wrap lg:text-base">
+                  Lundi matin, le sous prefet du nyon-ekele est partie en visite
+                  dans son village natale ....
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-5 pb-2 lg:pb-0 lg:w-full lg:h-35 lg:gap-2">
+              <img
+                src="./assets/img/images (5) 1.svg"
+                alt=""
+                class="w-full lg:h-full flex-1 lg:flex-1"
+              />
+              <div class="flex-2">
+                <h1 class="text-xs font-bold">
+                  Manifestations pour la baisse des prix
+                </h1>
+                <p class="text-xs">
+                  Lundi matin, le sous prefet du nyon-ekele est partie en visite
+                  dans son village natale ....
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-5 pb-2 lg:pb-0 lg:w-full lg:h-35 lg:gap-2">
+              <img
+                src="./assets/img/etage.svg"
+                alt=""
+                class="w-full lg:h-90/100 flex-1 lg:flex-1"
+              />
+              <div class="flex-2">
+                <h1 class="text-xs font-bold">
+                  Bientot un métro dans la capitale
+                </h1>
+                <p class="text-xs">
+                  Lundi matin, le sous prefet du nyon-ekele est partie en visite
+                  dans son village natale ....
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="pt-10">
-        <h1 class="font-bold border-l-10 border-primarygreen pl-3">
-          À LA UNE DU JOUR
-        </h1>
-        <div
-          class="grid grid-cols-1 pt-10 gap-5 divide-y-1 divide-solid divide-black"
-        >
-          <div class="flex gap-5 pb-2">
-            <img
-              src="./assets/img/les anfant.svg"
-              alt=""
-              class="w-full flex-1"
-            />
-            <div class="flex-1">
-              <h1 class="text-xs font-bold">
-                L’école primaire de melon dans le choc
-              </h1>
-              <p class="text-xs">
-                Lundi matin, le sous prefet du nyon-ekele est partie en visite
-                dans son village natale ....
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-5 pb-2">
-            <img
-              src="./assets/img/images (5) 1.svg"
-              alt=""
-              class="w-full flex-1"
-            />
-            <div class="flex-1">
-              <h1 class="text-xs font-bold">
-                Manifestations pour la baisse des prix
-              </h1>
-              <p class="text-xs">
-                Lundi matin, le sous prefet du nyon-ekele est partie en visite
-                dans son village natale ....
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-5 pb-2">
-            <img src="./assets/img/etage.svg" alt="" class="w-full flex-1" />
-            <div class="flex-1">
-              <h1 class="text-xs font-bold">
-                Bientot un métro dans la capitale
-              </h1>
-              <p class="text-xs">
-                Lundi matin, le sous prefet du nyon-ekele est partie en visite
-                dans son village natale ....
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex pt-10 px-0 gap-5 overflow-x-scroll items-stretch">
+      <div class="flex pt-10 px-0 gap-5 overflow-x-scroll lg:justify-between">
         <div class="">
           <img src="./assets/img/sub-hero-section-img1.svg" alt="" />
           <h1 class="text-xs text-nowrap mt-2 pl-3">
@@ -131,47 +148,53 @@
         </div>
       </div>
       <!-- rubrique actuality -->
-      <div class="pt-10">
-        <h1 class="text-wrap font-bold text-m text-center">
+      <div class="pt-10 lg:flex flex-col items-center lg:pt-20">
+        <h1 class="text-wrap font-bold text-m text-center lg:text-4xl">
           Suivez l’atualité en direct sur Canal 2 International
         </h1>
         <iframe
           src="https://youtube.com/embed/KUTPD2G946o"
           frameborder="0"
-          class="mt-5 w-full h-60"
+          class="mt-5 w-full h-60 lg:h-[30rem] lg:w-80/100 lg:rounded-2xl"
         ></iframe>
       </div>
       <!-- canal matin -->
       <div class="pt-10">
-        <h1 class="text-wrap font-bold text-m text-center">
-          Suivez l’atualité en direct sur Canal 2 International
-        </h1>
         <div class="">
-          <iframe
-            src="https://youtube.com/embed/G9CvXDHegdo?list=PLFD4wfgwEhg-QUuJWQg-O9fM_WaDNuKsa"
-            frameborder="0"
-            class="mt-5 w-full h-60"
-          ></iframe>
-          <div class="pt-10">
-            <h1 class="text-2xl font-bold text-secondarygreen">CANAL MATIN</h1>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud
-            </p>
-            <p class="pt-3 text-sm">
-              Du Lundi au vendredi sur Canal 2 international
-            </p>
-            <div class="flex gap-3 pt-3">
-              <img src="./assets/img/ig.svg" alt="" class="size-6" />
-              <img src="./assets/img/face.svg" alt="" class="size-6" />
-              <img src="./assets/img/twi.svg" alt="" class="size-6" />
-              <img src="./assets/img/llinkin.svg" alt="" class="size-6" />
+          <h1 class="text-wrap font-bold text-m text-center lg:text-4xl">
+            Suivez l’atualité en direct sur Canal 2 International
+          </h1>
+          <div class="lg:flex justify-center lg:pt-20 gap-15">
+            <iframe
+              src="https://youtube.com/embed/G9CvXDHegdo?list=PLFD4wfgwEhg-QUuJWQg-O9fM_WaDNuKsa"
+              frameborder="0"
+              class="mt-5 w-full h-60 lg:h-90 lg:rounded-2xl lg:w-80/100"
+            ></iframe>
+            <div class="pt-10 lg:flex flex-col gap-10 justify-center">
+              <h1 class="text-2xl lg:text-3xl font-bold text-secondarygreen">
+                CANAL MATIN
+              </h1>
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud
+              </p>
+              <p class="pt-3 text-sm">
+                Du Lundi au vendredi sur Canal 2 international
+              </p>
+              <div class="flex gap-3 pt-3">
+                <img src="./assets/img/ig.svg" alt="" class="size-6" />
+                <img src="./assets/img/face.svg" alt="" class="size-6" />
+                <img src="./assets/img/twi.svg" alt="" class="size-6" />
+                <img src="./assets/img/llinkin.svg" alt="" class="size-6" />
+              </div>
             </div>
           </div>
         </div>
         <!--  -->
-        <div class="flex pt-10 px-0 gap-5 overflow-x-scroll items-stretch">
+        <div
+          class="flex pt-10 px-0 gap-5 lg:justify-between lg:pt-20 overflow-x-scroll items-stretch"
+        >
           <div class="">
             <img src="./assets/img/min_nous_chez_vous1 1.svg" alt="" />
             <h1 class="text-xs text-nowrap mt-2 pl-3">CHAQUE VENDREDI</h1>
@@ -189,14 +212,16 @@
           </div>
         </div>
         <!--  -->
-        <div class="">
+        <div class="lg:flex lg:mt-30 flex-row-reverse justify-center">
           <img
             src="/assets/img/Rectangle 23.svg"
             alt=""
-            class="mt-5 w-full h-60"
+            class="mt-5 w-full h-60 lg:h-100"
           />
-          <div class="pt-10">
-            <h1 class="text-2xl font-bold text-secondarygreen">C’ COMMENT ?</h1>
+          <div class="pt-10 lg:p-10 lg:flex flex-col gap-10 lg:pt-20">
+            <h1 class="text-2xl lg:text-4xl font-bold text-secondarygreen">
+              C’ COMMENT ?
+            </h1>
             <p class="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -214,14 +239,18 @@
           </div>
         </div>
         <!--  -->
-        <div class="mt-10">
-          <h1 class="text-2xl font-bold border-l-10 border-primarygreen pl-3">
+        <div class="mt-10 lg:flex object-contain">
+          <h1
+            class="text-2xl font-bold border-l-10 border-primarygreen pl-3 ltr:pl-4 text-nowrap lg:border-none lg:p-0"
+          >
             ESPACE PUBLICITÉ
           </h1>
-          <img src="./assets/img/Rectangle 28.svg" alt="" class="mt-2" />
+          <img src="./assets/img/Rectangle 28.svg" alt="" class="mt-2 w-full" />
         </div>
         <!--  -->
-        <div class="flex pt-10 px-0 gap-5 overflow-x-scroll items-stretch">
+        <div
+          class="lg:pl-20 flex pt-10 px-0 gap-5 lg:justify-between overflow-x-scroll"
+        >
           <div class="size-50/100">
             <img
               src="./assets/img/jackson-david-BL_Q4zjduGU-unsplash 2(1).svg"
@@ -255,24 +284,26 @@
         </div>
       </div>
     </section>
-    <footer class="bg-thirdgreen m-0 mt-10 flex flex-col items-center">
-      <img src="./assets/img/logo canal2.svg" alt="" class="w-30" />
+    <footer
+      class="bg-thirdgreen m-0 mt-10 flex flex-col items-center lg:h-80 lg:justify-center"
+    >
+      <img src="./assets/img/logo canal2.svg" alt="" class="w-30 lg:w-80" />
       <div class="flex gap-3">
-        <img src="./assets/img/ig-white.svg" alt="" class="size-5" />
+        <img src="./assets/img/ig-white.svg" alt="" class="size-5 lg:size-10" />
         <img
           src="./assets/img/🦆 icon _circle facebook_.svg"
           alt=""
-          class="size-5"
+          class="size-5 lg:size-10"
         />
         <img
           src="./assets/img/🦆 icon _twitterbird_.svg"
           alt=""
-          class="size-5"
+          class="size-5 lg:size-10"
         />
         <img
           src="./assets/img/🦆 icon _rounded linkedin_.svg"
           alt=""
-          class="size-5"
+          class="size-5 lg:size-10"
         />
       </div>
     </footer>
